@@ -9,7 +9,7 @@ class UserList extends Component{
             return (
                 <li 
                     key={user.id}
-                    onClick={() => this.props.selectUser(user)}
+                    onClick={() => this.props.dispatch(selectUser(user))}
                 >
                     {user.fName} {user.lName}
                 </li>
@@ -36,4 +36,4 @@ function matchDispatchToProps(dispatch) {
 }
 
 
-export default connect(mapStateToProps, matchDispatchToProps)(UserList);
+export default connect(mapStateToProps)(UserList);

@@ -7,19 +7,19 @@ module.exports = {
         contentBase: './src',
         port: 3000
     },
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'source-map',
     entry: './src/js/index.js',
     module: {
         loaders: [
             {
                 test: /\.js$/,
-                loaders: ['babel'],
+                loaders: ['babel-loader'],
                 exclude: /node_modules/
             }
         ]
     },
     output: {
-        path: 'src',
+        path: path.resolve(__dirname,'src'),
         filename: 'js/bundle.min.js'
     },
     plugins: [

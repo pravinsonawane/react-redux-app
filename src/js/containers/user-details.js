@@ -10,9 +10,9 @@ class UserDetails extends Component{
         }
         return (
             <div>
-                <h2>{this.props.user.fName}</h2>
-                <h2>{this.props.user.lName}</h2>
-                <h4>{this.props.user.age}</h4>
+                <h2>{this.props.user.user.fName}</h2>
+                <h2>{this.props.user.user.lName}</h2>
+                <h4>{this.props.user.user.age}</h4>
             </div>
         );
     }
