@@ -2,11 +2,15 @@
   "name": "react-redux-app",
   "version": "1.0.0",
   "main": "index.js",
+  "config": {
+    "data": "hello.."
+  },
   "scripts": {
     "dev": "webpack",
     "start": "webpack-dev-server",
     "styleguide": "styleguidist server",
-    "test": "mocha --reporter spec tools/testSetup.js \"src/js/**/*.test.js\""
+    "test": "mocha --reporter spec tools/testSetup.js \"src/js/**/*.test.js\"",
+    "study": "node study.js"
   },
   "license": "MIT",
   "dependencies": {
