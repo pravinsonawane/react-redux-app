@@ -1,4 +1,4 @@
-console.log("I am in Check.js file");
+console.log("I am in Study.js file");
 console.log("Process object has all node values");
 /*
     The process object is a global that provides information about, and control over, the current Node.js process.
@@ -11,4 +11,12 @@ console.log("Process object has all node values");
     Read config data of package.json
 */
 console.log(process.env.npm_package_config_data);
+
+// npm run study --flag1=hiiiii
+console.log(process.env.npm_config_flag1);
+
+// Read dependencies value
+console.log(process.env.npm_package_dependencies_babel_core);
+
+
 

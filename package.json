@@ -10,7 +10,8 @@
     "start": "webpack-dev-server",
     "styleguide": "styleguidist server",
     "test": "mocha --reporter spec tools/testSetup.js \"src/js/**/*.test.js\"",
-    "study": "node study.js"
+    "study": "node study.js",
+    "es6": "node practice.js"
   },
   "license": "MIT",
   "dependencies": {
