@@ -11,7 +11,7 @@ function setup() {
     user: {
         fName: 'Pravin',
         lName: 'Sonawane',
-        age: '33'
+        age: '34'
     }
   };
 
@@ -19,6 +19,7 @@ function setup() {
 }
 
 describe('Testing component using Enzyme', () => {
+
   it('renders div and h2', () => {
     const wrapper = setup();
     expect(wrapper.find('div').length).toBe(1);

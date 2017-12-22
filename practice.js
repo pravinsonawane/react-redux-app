@@ -3,6 +3,7 @@ console.log("----------Use of Let---------");
 function getValue(condition) {
     var value = 30;
     var value = 40;
+    
     // let value = 50; // Will  throw SyntaxError: Identifier 'value' has already been declared
     if (condition) {
         let value = "blue";
@@ -329,3 +330,4 @@ let pr3 = new Promise((resolve, reject) => {
 pr3.then((val) => console.log(`Success: ${val}`),
     (err) => console.log(`Error: ${err}`)
 );
+

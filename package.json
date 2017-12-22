@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "webpack",
-    "start": "webpack-dev-server",
+    "start": "npm test && webpack-dev-server",
     "styleguide": "styleguidist server",
     "test": "mocha --reporter spec tools/testSetup.js \"src/js/**/*.test.js\"",
     "study": "node study.js",
