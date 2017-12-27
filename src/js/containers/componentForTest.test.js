@@ -24,6 +24,5 @@ describe('Testing component using Enzyme', () => {
     const wrapper = setup();
     expect(wrapper.find('div').length).toBe(1);
     expect(wrapper.find('h2').text()).toBe('Pravin');
-
   });
 });
